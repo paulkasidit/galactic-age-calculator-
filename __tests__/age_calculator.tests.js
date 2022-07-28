@@ -18,6 +18,11 @@ describe('Age',() => {
     expect(age1.checkInput()).toEqual(true);
   });
   
+  test("should return age multiplied by .24", () => {
+    const age1 = new Age(24); 
+    expect(age1.mercuryAge()).toEqual(5.76);
+  });
+  
 
 });
 

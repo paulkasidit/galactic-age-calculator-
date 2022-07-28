@@ -12,7 +12,15 @@ export default class Age {
     }
   }
 
-  
+  mercuryAge(){
+    let age = this.age; 
 
-
+    if (this.checkInput(age) === true){
+      return this.age * .24; 
+    } else if (this.checkInput(age) === true) {
+      this.age = "invalid input"; 
+    } else {
+      return this.age;
+    }
+}
 }
