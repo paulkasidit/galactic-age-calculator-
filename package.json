@@ -1,7 +1,6 @@
 {
   "name": "galactic-age-calculator",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",
@@ -28,5 +27,14 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulkasidit/galactic-age-calculator-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paulkasidit/galactic-age-calculator-/issues"
+  },
+  "homepage": "https://github.com/paulkasidit/galactic-age-calculator-#readme",
+  "description": ""
 }
