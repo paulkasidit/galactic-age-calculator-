@@ -19,5 +19,11 @@ describe('galacticCalculator',() => {
     expect(paul.age).toEqual(100); 
   });
 
+  test('should return venus age', () => {
+    paul.venusAge();
+    expect(paul.age).toEqual(100); 
+  });
+
+
 })
 
