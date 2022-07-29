@@ -3,15 +3,17 @@ import galacticCalculator from '../src/galacticCalculator.js';
 
 describe('galacticCalculator',() => {
 
-  test ("should return age as integer", () => {
-    const age1 = new galacticCalculator(24); 
-    expect(galacticCalculator.age).toEqual(24); 
-  }); 
+  let paul; 
 
-  test ("should return life expectancy as integer", () => {
-    const age1 = new galacticCalculator(24, 85); 
-    expect(galacticCalculator.lifeExpectancy).toEqual(85); 
+  beforeEach(() => {
+    paul = new galacticCalculator(24, 85);
   });
 
-});
+  test('should create a galacticAgeCalculator object with age and lifexpectancy property', () => {
+    expect(paul.age).toEqual(24); 
+    expect(paul.lifeExpectancy).toEqual(85); 
+  }); 
+
+
+})
 
