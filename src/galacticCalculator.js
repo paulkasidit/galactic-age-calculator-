@@ -6,8 +6,13 @@ export default class galacticCalculator {
   }
 
   mercuryAge(){
-    this.age = (this.age/0.24); 
+    this.age = Math.round((this.age/0.24)); 
   }
+
+  venusAge(){
+    this.age = Math.round((this.age/0.62)); 
+  }
+  
 
 
 }
