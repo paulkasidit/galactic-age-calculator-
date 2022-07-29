@@ -12,6 +12,7 @@ describe('galacticCalculator',() => {
   test('should create a galacticAgeCalculator object with age and lifexpectancy property', () => {
     expect(paul.age).toEqual(24); 
     expect(paul.lifeExpectancy).toEqual(85); 
+    expect(paul.yearsLeft).toEqual(0); 
   }); 
 
   test('should return mercury age', () => {
@@ -22,6 +23,11 @@ describe('galacticCalculator',() => {
   test('should return mercury life expectancy', () => {
     paul.mercuryAge();
     expect(paul.lifeExpectancy).toEqual(354); 
+  });
+
+  test('should return years left to live on mercury', () => {
+    paul.mercuryAge();
+    expect(paul.lifeExpectancy).toEqual(254); 
   });
 
   test('should return venus age', () => {
