@@ -9,6 +9,7 @@ export default class galacticCalculator {
   mercuryAge(){
     this.age = Math.round((this.age/0.24)); 
     this.lifeExpectancy = Math.round((this.lifeExpectancy/0.24));
+    this.yearsLeft = Math.round(this.lifeExpectancy - this.age); 
   }
 
   venusAge(){
