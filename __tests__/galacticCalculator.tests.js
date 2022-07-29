@@ -34,10 +34,15 @@ describe('galacticCalculator',() => {
     expect(paul.lifeExpectancy).toEqual(137); 
   });
 
-  test('should return venus age', () => {
+  test('should return mars age', () => {
     paul.marsAge();
     expect(paul.age).toEqual(13); 
   }); 
+
+  test('should return mars life expectancy', () => {
+    paul.venusAge();
+    expect(paul.lifeExpectancy).toEqual(45); 
+  });
 
   test('should return jupiter age', () => {
     paul.jupiterAge();
