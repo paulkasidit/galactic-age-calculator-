@@ -13,6 +13,9 @@ export default class galacticCalculator {
     this.age = Math.round((this.age/0.62)); 
   }
   
+  marsAge() { 
+    this.age = Math.round((this.age/1.88)); 
+  }
 
 
 }
