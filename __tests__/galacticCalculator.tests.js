@@ -29,8 +29,10 @@ describe('galacticCalculator',() => {
     expect(paul.age).toEqual(13); 
   }); 
 
-  
-
+  test('should return jupiter age', () => {
+    paul.jupiterAge();
+    expect(paul.age).toEqual(2); 
+  }); 
 
 })
 
