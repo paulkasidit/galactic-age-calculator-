@@ -24,6 +24,13 @@ describe('galacticCalculator',() => {
     expect(paul.age).toEqual(39); 
   });
 
+  test('should return venus age', () => {
+    paul.marsAge();
+    expect(paul.age).toEqual(13); 
+  }); 
+
+  
+
 
 })
 
