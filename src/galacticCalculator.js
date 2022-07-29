@@ -1,7 +1,8 @@
-export default class Age { 
+export default class galacticCalculator { 
 
-  constructor(age) {
-    this.age = age; 
+  constructor(age, lifeExpectancy) {
+    this.age = parseInt(age);  
+    this.lifeExpectancy = parseInt(lifeExpectancy); 
   }
 
 
