@@ -2,11 +2,13 @@ export default class galacticCalculator {
 
   constructor(age, lifeExpectancy) {
     this.age = parseInt(age);  
-    this.lifeExpectancy = parseInt(lifeExpectancy); 
+    this.lifeExpectancy = parseInt(lifeExpectancy);
+    this.yearsLeft = 0; 
   }
 
   mercuryAge(){
     this.age = Math.round((this.age/0.24)); 
+    this.lifeExpectancy = Math.round((this.lifeExpectancy/0.24));
   }
 
   venusAge(){
