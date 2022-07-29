@@ -13,5 +13,11 @@ describe('galacticCalculator',() => {
     expect(galacticCalculator.lifeExpectancy).toEqual(85); 
   });
 
+
+  test ("should return planet as string", () = {
+    const age1 = new Age(24, 85, 'mercury'); 
+    expect(galacticCalculator.planet).toEqual('mercury'); 
+  });
+
 });
 
