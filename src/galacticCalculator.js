@@ -21,6 +21,7 @@ export default class galacticCalculator {
   marsAge() { 
     this.age = Math.round((this.age/1.88)); 
     this.lifeExpectancy = Math.round((this.lifeExpectancy/1.88));
+    this.yearsLeft = Math.round(this.lifeExpectancy - this.age); 
   }
 
   jupiterAge() { 
