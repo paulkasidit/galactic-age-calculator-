@@ -23,6 +23,7 @@ export default class galacticCalculator {
 
   jupiterAge() { 
     this.age = Math.round((this.age/11.86)); 
+    this.lifeExpectancy = Math.round((this.lifeExpectancy/11.86));
   }
 
 
