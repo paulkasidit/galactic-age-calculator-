@@ -5,5 +5,9 @@ export default class galacticCalculator {
     this.lifeExpectancy = parseInt(lifeExpectancy); 
   }
 
+  mercuryAge(){
+    this.age = (this.age/0.24); 
+  }
+
 
 }
