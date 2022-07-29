@@ -74,5 +74,12 @@ describe('galacticCalculator',() => {
     expect(paul.lifeExpectancy).toEqual(7); 
   });
 
+
+  test('should return years left to live on venus', () => {
+    paul.marsAge();
+    expect(paul.yearsLeft).toEqual(5); 
+  });
+
+
 })
 
