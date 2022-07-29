@@ -19,7 +19,7 @@ describe('galacticCalculator',() => {
   test('should return mercury age', () => {
     paul.mercuryAge();
     expect(paul.age).toEqual(100); 
-  });c
+  });
 
   test('should return mercury life expectancy', () => {
     paul.mercuryAge();
@@ -43,10 +43,11 @@ describe('galacticCalculator',() => {
   }); 
 
   test('should return years left to live on venus', () => {
-    paul.mercuryAge();
+    paul.venusAge();
     expect(paul.yearsLeft).toEqual(98); 
   });
 
+  //mars
   test('should return mars age', () => {
     paul.marsAge();
     expect(paul.age).toEqual(13); 
@@ -57,6 +58,12 @@ describe('galacticCalculator',() => {
     expect(paul.lifeExpectancy).toEqual(45); 
   });
 
+  test('should return years left to live on venus', () => {
+    paul.marsAge();
+    expect(paul.yearsLeft).toEqual(32); 
+  });
+
+  //jupiter
   test('should return jupiter age', () => {
     paul.jupiterAge();
     expect(paul.age).toEqual(2); 
