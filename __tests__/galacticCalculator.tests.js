@@ -32,7 +32,7 @@ describe('galacticCalculator',() => {
     expect(paul.yearsLeft).toEqual(254); 
   });
 
-  test('should return yearsPastLifeExpectancy if user has outlived their life expectancy on venus, yearsLeft property should be reduced to zero', () => {
+  test('should return yearsPastLifeExpectancy if user has outlived their life expectancy on mercury, yearsLeft property should be reduced to zero', () => {
     let paul =  new galacticCalculator(85, 24);
     paul.mercuryAge();
     expect(paul.yearsPastLifeExpectancy).toEqual(254); 
@@ -60,7 +60,7 @@ describe('galacticCalculator',() => {
     paul.venusAge();
     expect(paul.yearsPastLifeExpectancy).toEqual(98); 
     expect(paul.yearsLeft).toEqual(0); 
-  });
+  }); 
   
 
   //mars
@@ -78,6 +78,14 @@ describe('galacticCalculator',() => {
     paul.marsAge();
     expect(paul.yearsLeft).toEqual(32); 
   });
+
+  test('should return yearsPastLifeExpectancy if user has outlived their life expectancy on mars, yearsLeft property should be reduced to zero', () => {
+    let paul =  new galacticCalculator(85, 24);
+    paul.marsAge();
+    expect(paul.yearsPastLifeExpectancy).toEqual(32); 
+    expect(paul.yearsLeft).toEqual(0); 
+  });
+
 
   //jupiter
   test('should return jupiter age', () => {
