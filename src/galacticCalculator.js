@@ -49,13 +49,21 @@ export default class galacticCalculator {
       this.yearsPastLifeExpectancy += 0; 
       this.yearsLeft += 0; 
     }
-    
+
   }
 
   jupiterAge() { 
     this.age = Math.round((this.age/11.86)); 
     this.lifeExpectancy = Math.round((this.lifeExpectancy/11.86));
     this.yearsLeft = Math.round(this.lifeExpectancy - this.age); 
-  }
 
+    if ( this.yearsLeft < 0){ 
+      this.yearsPastLifeExpectancy = this.yearsLeft * -1;
+      this.yearsLeft = 0; 
+    } else { 
+      this.yearsPastLifeExpectancy += 0; 
+      this.yearsLeft += 0; 
+    }
+
+  }
 }
