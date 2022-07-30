@@ -22,7 +22,7 @@ This business logic application is used for calculating your galactic age across
 
 
 ## Setup/Installation Requirements
-- Cloning the repo and viewing the webpage on your local machine
+- Cloning the repo and running the tests for the business logic on your local machine
 
 1. Clone the repo to your desired local directory with the below terminal command (you must already have git installed). Open a terminal in your preferred directory and run this command. 
 ```
