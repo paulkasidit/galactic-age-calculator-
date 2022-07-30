@@ -30,9 +30,22 @@ git clone https://github.com/paulkasidit/galactic-age-calculator-
 
 ``` 
 3. Open this folder in your VS Code. 
-2. Install the VS Code live server extension on your VS Code by clicking [here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), or by searching the name in the desktop application's extensions marketplace. 
-4. After installation, on the lower right-hand corner of VS Code, there will be a button saying to "Go Live". A live editable version of the website should be automatically opened in your browser.
-5. And that's it!
+2. Navigate to the root directory of this project. 
+4. Run this command in your terminal to install npm. 
+```
+npm install
+
+``` 
+5. Run this command in your terminal to install npm dependencies. 
+```
+npm run build 
+
+``` 
+6. Run this command in your terminal to run npm tests. 
+```
+npm run test
+
+``` 
 
 ## Known Bugs
 
