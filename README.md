@@ -41,7 +41,7 @@ npm install
 npm run build 
 
 ``` 
-6. Run this command in your terminal to run npm tests. 
+6. Run this command in your terminal to run the test suites. 
 ```
 npm run test
 
