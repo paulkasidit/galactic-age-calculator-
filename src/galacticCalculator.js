@@ -12,6 +12,14 @@ export default class galacticCalculator {
     this.lifeExpectancy = Math.round((this.lifeExpectancy/0.24));
     this.yearsLeft = Math.round(this.lifeExpectancy - this.age); 
 
+    if ( this.yearsLeft < 0){ 
+      this.yearsPastLifeExpectancy = this.yearsLeft * -1;
+      this.yearsLeft = 0; 
+    } else { 
+      this.yearsPastLifeExpectancy += 0; 
+      this.yearsLeft += 0; 
+    }
+
   }
 
   venusAge(){
@@ -26,6 +34,7 @@ export default class galacticCalculator {
       this.yearsPastLifeExpectancy += 0; 
       this.yearsLeft += 0; 
     }
+    
   }
   
   marsAge() { 
