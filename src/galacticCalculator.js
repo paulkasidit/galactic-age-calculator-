@@ -34,13 +34,22 @@ export default class galacticCalculator {
       this.yearsPastLifeExpectancy += 0; 
       this.yearsLeft += 0; 
     }
-    
+
   }
   
   marsAge() { 
     this.age = Math.round((this.age/1.88)); 
     this.lifeExpectancy = Math.round((this.lifeExpectancy/1.88));
     this.yearsLeft = Math.round(this.lifeExpectancy - this.age); 
+
+    if ( this.yearsLeft < 0){ 
+      this.yearsPastLifeExpectancy = this.yearsLeft * -1;
+      this.yearsLeft = 0; 
+    } else { 
+      this.yearsPastLifeExpectancy += 0; 
+      this.yearsLeft += 0; 
+    }
+    
   }
 
   jupiterAge() { 
