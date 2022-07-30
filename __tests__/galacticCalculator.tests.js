@@ -104,6 +104,12 @@ describe('galacticCalculator',() => {
     expect(paul.yearsLeft).toEqual(5); 
   });
 
+  test('should return yearsPastLifeExpectancy if user has outlived their life expectancy on jupiter, yearsLeft property should be reduced to zero', () => {
+    let paul =  new galacticCalculator(85, 24);
+    paul.jupiterAge();
+    expect(paul.yearsPastLifeExpectancy).toEqual(5); 
+    expect(paul.yearsLeft).toEqual(0); 
+  });
 
 })
 
