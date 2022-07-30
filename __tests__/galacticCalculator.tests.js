@@ -13,6 +13,7 @@ describe('galacticCalculator',() => {
     expect(paul.age).toEqual(24); 
     expect(paul.lifeExpectancy).toEqual(85); 
     expect(paul.yearsLeft).toEqual(0); 
+    expect(paul.yearsPastLifeExpectancy).toEqual(0); 
   }); 
 
   //mercury 
